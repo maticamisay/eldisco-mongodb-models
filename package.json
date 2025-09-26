@@ -1,6 +1,6 @@
 {
   "name": "@eldisco/mongodb-models",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Modelos compartidos de MongoDB para proyectos El Disco",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
@@ -34,21 +34,24 @@
     "url": "git+https://github.com/maticamisay/eldisco-mongodb-models.git"
   },
   "peerDependencies": {
-    "mongoose": "^7.0.0 || ^8.0.0",
-    "bcryptjs": "^2.4.3"
+    "bcryptjs": "^2.4.3",
+    "mongoose": "^7.0.0 || ^8.0.0"
+  },
+  "optionalDependencies": {
+    "@upstash/redis": "^1.35.4"
   },
   "devDependencies": {
-    "@types/node": "^20.0.0",
     "@types/bcryptjs": "^2.4.2",
-    "typescript": "^5.0.0",
-    "rimraf": "^5.0.0",
-    "prettier": "^3.0.0",
-    "eslint": "^8.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
     "jest": "^29.0.0",
-    "@types/jest": "^29.0.0",
-    "ts-jest": "^29.0.0"
+    "prettier": "^3.0.0",
+    "rimraf": "^5.0.0",
+    "ts-jest": "^29.0.0",
+    "typescript": "^5.0.0"
   },
   "engines": {
     "node": ">=16.0.0"

@@ -16,6 +16,9 @@ export * from './models/ServiceRequest';
 // Export database utilities
 export * from './utils/database';
 
+// Export services and cache utilities
+export * from './services';
+
 // Named exports for direct access
 export {
   User,
@@ -83,6 +86,18 @@ export {
   DatabaseConnection,
   type DatabaseConnectionOptions
 } from './utils/database';
+
+// Service exports for convenience
+export {
+  CacheManager,
+  ProductService,
+  CatalogService,
+  SalesService,
+  createCacheManager,
+  createProductService,
+  createCatalogService,
+  createSalesService
+} from './services';
 
 // Type exports
 export type {
